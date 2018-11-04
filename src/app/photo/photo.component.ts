@@ -9,5 +9,7 @@ export class PhotoComponent {
 
   @Input()  description = '';
   @Input()  url = '';
+  //  é preciso indicar com  "@Input", para que essas propriedades possam
+  //  receber parametros de fora.
 
 }
