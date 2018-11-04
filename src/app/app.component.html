@@ -1,3 +1,7 @@
-<app-photo url="https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045__340.jpg" description="Leão"></app-photo>
-<app-photo url="https://statig0.akamaized.net/bancodeimagens/dg/qi/e6/dgqie66ooeyri4whdebd9oqh9.jpg" description="Leoa"></app-photo>
+<app-photo *ngFor="let photo of photos"
+           [url]="photo.url"
+           [description]="photo.description">
+</app-photo>
 <!-- chamando app-photo, e passando url e description -->
+<!-- *ngFor: faz um loop no arry de Photos, photo variavel temporaria controle, photos o array -->
+<!-- [ ] faco um data binding para saber o valor de url e description -->
