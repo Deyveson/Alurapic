@@ -1,19 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+import { PhotosModule } from './photos/photos.module';
 // BOA PRATICA Primeiro os importes do angular
-import { PhotoComponent } from './photo/photo.component';
+
 // Segundo os importes feitos por mim
 
 @NgModule({
   declarations: [
     AppComponent,
-    PhotoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PhotosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// declarations: fica os componentes que quero importar
+// imports: ficam os modulos
