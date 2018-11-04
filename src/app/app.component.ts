@@ -10,10 +10,18 @@ import { HttpClient } from '@angular/common/http';
 
 export class AppComponent {
 
-  photos = [];
+  photos: Object [] = [];
+  // declaro a variavel com o tipo 'Object [] = [];'
 
   constructor (http: HttpClient) {
-    console.log(http);
+
+    http
+      .get<Object[]>('http://localhost:3000/flavio/photos')
+      .subscribe(  photos => this.photos = photos );
+      // 1 - .get metodo, vai nesse endereço quero os dados, que são do tipo 'Object[]'
+      // 2 - .subscribe me inscrevo
+
   }
+
 
 }
