@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+
 import { PhotosModule } from './photos/photos.module';
+import {AppRoutingModule} from './app.routing.module';
 // BOA PRATICA Primeiro os importes do angular
 
 // Segundo os importes feitos por mim
@@ -12,12 +14,10 @@ import { PhotosModule } from './photos/photos.module';
   ],
   imports: [
     BrowserModule,
-    PhotosModule
+    PhotosModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-// declarations: fica os componentes que quero importar
-// imports: ficam os modulos
