@@ -13,7 +13,7 @@ export class PhotoService {
   listFromUser(userName){
 
     return this.http
-    .get<Photo[]>( API + '/flavio/photos')
+    .get<Photo[]>( API + '/' + userName + '/photos')
     // .get metodo, vai nesse endereço quero os dados, que são do tipo 'Object[]'
 
   }
