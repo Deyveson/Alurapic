@@ -13,6 +13,8 @@ export class PhotoListComponent implements OnInit {
   photos: Photo [] = [];
   // declaro a variavel com o tipo 'Object [] = [];'
 
+  filter: string = '';
+
   constructor (
     private photoService: PhotoService,
     private activatedRoute: ActivatedRoute
