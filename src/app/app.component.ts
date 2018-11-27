@@ -1,5 +1,6 @@
 import { PhotoService } from './photos/photo/photo.service';
 import { Component, Injectable } from '@angular/core';
+import {Photo} from './photos/photo/photo';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { Component, Injectable } from '@angular/core';
 
 export class AppComponent {
 
-  photos: Object [] = [];
+  photos: Photo [] = [];
   // declaro a variavel com o tipo 'Object [] = [];'
 
   constructor (photoService: PhotoService) {

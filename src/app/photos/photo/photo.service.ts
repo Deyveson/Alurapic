@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import {Photo} from './photo';
 
 const API = 'http://localhost:3000';
 
@@ -12,7 +13,7 @@ export class PhotoService {
   listFromUser(userName){
 
     return this.http
-    .get<Object[]>( API + '/flavio/photos')
+    .get<Photo[]>( API + '/flavio/photos')
     // .get metodo, vai nesse endereço quero os dados, que são do tipo 'Object[]'
 
   }
