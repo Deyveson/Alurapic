@@ -6,6 +6,7 @@ import {LoadButtonComponent} from './load-button/load-button.component';
 import {FilterByDescription} from './filter-by-description.pipe';
 import {PhotoListComponent} from './photo-list.component';
 import {PhotosComponent} from './photos/photos.component';
+import {CardModule} from '../../shared/components/card/card.module';
 
 @NgModule({
   declarations:[
@@ -16,7 +17,8 @@ import {PhotosComponent} from './photos/photos.component';
   ],
   imports: [
     CommonModule,
-    PhotoModule
+    PhotoModule,
+    CardModule
   ]
 })
 export class PhotoListModule{}
