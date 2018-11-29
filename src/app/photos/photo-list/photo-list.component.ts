@@ -44,3 +44,4 @@ export class PhotoListComponent implements OnInit, OnDestroy {
         if (!photos.length) this.hasMore = false;
       });
 }
+}
